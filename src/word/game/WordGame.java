@@ -75,7 +75,7 @@ public class WordGame
         }
         catch(Exception e)
         {
-            System.out.println("ERROR HAS OCCURED");
+            System.err.println("ERROR HAS OCCURED");
         }
     }
     
