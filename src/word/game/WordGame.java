@@ -79,4 +79,30 @@ public class WordGame
         }
     }
     
+    public static String hide(String word){ // Method to show hidden word
+                                // The word to be hidden is retrieved
+        
+        int x; // for the for loop
+        String hiddenWord = ""; // Hold the value of the hidden word
+        
+        for(x = 0; x < word.length(); x++){ // Loop loops equal as the number of characters in the word
+            
+            hiddenWord = hiddenWord + "-"; // adds a for every character
+        } // end of for loop
+        return hiddenWord; // returns the hidden word
+    }
+    public static String Dictionary(int a){ // Dictionary to hold words
+                                //recieves random number from above
+        
+        String[] word = {"Advocate","Apprehend","Audacios","Audacios",
+            "Auspicious","Bizarre","Bonanza","Bountiful","Capacious",
+            "Commemorate","Conscientious","Crusade","Decipher","Deplore",
+            "Deter"}; // List of words
+        String randoWord; // initializes the random word
+        
+        randoWord = word[a]; // takes the random number grabs its equal from the word array and sets it
+        
+        return randoWord;  // returns the random word
+    }
+    
 }
