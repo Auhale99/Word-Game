@@ -21,8 +21,6 @@ public class WordGame
             
             while(wordGuessed != true)
             {
-                    // Single dimensional array wordList containing three words to guess
-                //String[] wordList = {"Hello", "There", "World"};
                     // Strings to handle word guesses
                 String userGuess = "", wordToGuess = "";
                 String randoWord = "", hiddenWord = ""; 
@@ -382,7 +380,7 @@ public class WordGame
         
         for(x = 0; x < word.length(); x++){ // Loop loops equal as the number of characters in the word
             
-            hiddenWord = hiddenWord + "-"; // adds a for every character
+            hiddenWord = hiddenWord + "―"; // adds a for every character
         } // end of for loop
         return hiddenWord; // returns the hidden word
     }
@@ -393,7 +391,6 @@ public class WordGame
             "Auspicious","Bizarre","Bonanza","Bountiful","Capacious",
             "Commemorate","Conscientious","Crusade","Decipher","Deplore",
             "Deter"}; // List of words
-        //String randoWord; // initializes the random word
         
         randoWord = word[a]; // takes the random number grabs its equal from the word array and sets it
         
